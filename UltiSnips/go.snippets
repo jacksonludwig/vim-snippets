@@ -1,6 +1,7 @@
 # Snippets for Go
 
-priority -50
+# overwrite snippets dir
+priority 1
 
 # when to abbriviate and when not?
 # b doesn't work here, because it ignores whitespace
@@ -112,4 +113,9 @@ snippet err "Basic error handling" b
 if err != nil {
 	log.${1:Fatal}(err)
 }
+endsnippet
+
+# my snippets
+snippet pl "fmt.Println()"
+fmt.Println($0)
 endsnippet
